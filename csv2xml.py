@@ -18,7 +18,7 @@ import csv
 
 if len(sys.argv) != 2:
  print ('Usage: python3 csv2xml.py myFile.csv')
- print ('generates myFile.xml')
+ print ('  generates myFile.xml')
  sys.exit()
 
 csvFile = sys.argv[1]
@@ -36,12 +36,15 @@ rowNum = 0
 for row in csvData:
  if rowNum == 0:
   params = row
- else: 
-  xmlData.write('      <mcastChannel')
-  for i in range(len(params)):
-   xmlData.write(' ' + params[i] + '=' + '"' + row[i] + '"')
-  xmlData.write('/>' + "\n")                
- rowNum +=1
+ else:
+  if len(row)!=0: # skip empty rows
+   xmlData.write('      <mcastChannel')
+   for i in range(len(params)):
+    xmlData.write(' ' + params[i] + '=' + '"' + row[i] + '"')
+   xmlData.write('/>' + "\n")
+  else:
+   0 # print('empty row')  
+ rowNum +=1  
 
 xmlData.write('     </mclist>' + "\n") 
 xmlData.write('    </mcastnames>' + "\n")
