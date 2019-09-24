@@ -1,0 +1,19 @@
+Scripts for converting files between BT XML multicast stream list configuration and CSV.
+Can be used to help import/export stream configuration data to a spreadsheet for simplified manual editing.
+
+First row of CSV file must contain the stream paramater names as they appear in the exported XML configuration.
+The 'params' array in xml2csv.py includes all paramaters for Stream List with joininfo (mask 0x80) in BT SW version 5.5.
+
+Both scripts require single file name paramater to run. 
+The same file name with modified three letter extension (.csv <> .xml) is used for the output file.
+Existing files are overwritten.
+
+Example:
+
+python csv2xml.py MyCSVFile.csv
+
+will write XML data to a file called MyCSVFile.xml
+
+## These programs are free software. They comes without any warranty or support.
+## Users of this software must accept responsibility and liability for all consequences
+## arising from it's use. You may modify and/or distribute this software as much as you like.
