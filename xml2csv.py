@@ -2,7 +2,10 @@
 ##
 ## xml2csv.py
 ## Convert BT probe XML stream list configuration file to CSV
-##
+
+## This program is free software. It comes without any warranty or support.
+## Users of this software must accept responsibility and liability for all consequences
+## arising from it's use. You may modify and/or distribute this software as much as you like.
 
 # example xml file:
 #
