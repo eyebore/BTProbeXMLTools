@@ -3,6 +3,10 @@
 ## csv2xml.py
 ## Convert CSV file to BT probe XML streamlist configuration.
 
+## This program is free software. It comes without any warranty or support.
+## Users of this software must accept responsibility and liability for all consequences
+## arising from it's use. You may modify and/or distribute this software as much as you like.
+
 # First row of the csv files must comtain the paramater names
 
 # example CSV file:
