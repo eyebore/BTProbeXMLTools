@@ -1,3 +1,10 @@
+eztz.py:
+Script to modify timeZone config paramater in BT hardware probes. Can be used to change timezone in a list of probes
+with a single command (when switching to/frmo DST).
+Copy the file to the VBC server and run from there, python and required libraries should already be avialable.
+To run from another computer with python available may require installing requests (pip install requests)
+
+csv2xml.py and xml2csv.py:
 Scripts for converting files between BT XML multicast stream list configuration and CSV.
 Can be used to help import/export stream configuration data to a spreadsheet for simplified manual editing.
 
@@ -14,6 +21,6 @@ python csv2xml.py MyCSVFile.csv
 
 will write XML data to a file called MyCSVFile.xml
 
-## These programs are free software. They comes without any warranty or support.
+## These programs are free software. They comes without any warranty or implied support.
 ## Users of this software must accept responsibility and liability for all consequences
 ## arising from it's use. You may modify and/or distribute this software as much as you like.
