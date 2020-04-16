@@ -1,6 +1,6 @@
 eztz.py:
 Script to modify timeZone config paramater in BT hardware probes. Can be used to change timezone in a list of probes
-with a single command (when switching to/frmo DST).
+with a single command (when switching to/from DST).
 Copy the file to the VBC server and run from there, python and required libraries should already be avialable.
 To run from another computer with python available may require installing requests (pip install requests)
 
